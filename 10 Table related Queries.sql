@@ -1,0 +1,29 @@
+SHOW DATABASES;
+USE Collage;
+SHOW TABLES;
+SELECT * FROM std;
+
+ALTER TABLE std 
+ADD COLUMN Age INT;
+
+SELECT * FROM std;
+
+ALTER TABLE std 
+DROP COLUMN Age;
+
+SELECT * FROM std;
+
+ALTER TABLE std
+RENAME TO Student;
+
+
+ALTER TABLE Student 
+CHANGE Roll_num Roll_No INT;
+
+SELECT * FROM Student;
+
+
+ALTER TABLE Student
+MODIFY Marks varchar(2);
+
+SELECT * FROM Student;

@@ -1,0 +1,28 @@
+SHOW DATABASES;
+CREATE DATABASE DB2;
+
+USE DB2;
+
+CREATE TABLE Info(
+	Id INT PRIMARY KEY,
+    Name VARCHAR(50)
+);
+
+INSERT INTO Info (id,name) VALUES 
+	(1,"ABC1"),
+    (2,"ABC2"),
+    (3,"abc3");
+    
+SELECT * FROM Info;
+
+SET SQL_SAFE_UPDATES = 0;
+UPDATE Info 
+SET Name = "ABC3"
+WHERE Name = "abc3";
+
+
+SELECT * FROM Info;
+
+TRUNCATE TABLE Info;
+
+SELECT * FROM Info;

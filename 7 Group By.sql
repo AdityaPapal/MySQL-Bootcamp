@@ -1,0 +1,6 @@
+SHOW TABLES;
+
+SELECT * FROM std;
+
+SELECT City ,AVG(Marks) FROM std GROUP BY City;
+SELECT City ,COUNT(Marks) FROM std GROUP BY City;
