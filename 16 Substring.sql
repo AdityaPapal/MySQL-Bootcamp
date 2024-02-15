@@ -6,3 +6,5 @@ SELECT * FROM worker;
 # SUBSTRING FROM FIRST NAME OF WORKER 
 
 SELECT SUBSTRING(First_name,1,1) FROM worker;
+
+SELECT (RIGHT(First_name, 3)) FROM worker;
